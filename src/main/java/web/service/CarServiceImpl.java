@@ -19,7 +19,7 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public List<Car> getSomeCars(List<Car> cars, Integer count) {
+    public List<Car> getSomeCars(Integer count) {
         if (count <= 0) {
             return null;
         } else if (count >= 5) {
